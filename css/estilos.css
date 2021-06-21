@@ -28,7 +28,7 @@ header .textos-header{
 	display: flex;
 	height: 430px;
 	width: 100%;
-	color: #b732b5;
+	color: #fff;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -143,7 +143,6 @@ body{
 	position: relative;
 	cursor: pointer;
 	box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
-	height: 250px;
 }
 
 .img-gen > img{
@@ -160,7 +159,7 @@ body{
 	top:0;
 	transform: scale(0);
 	background: hsla(56,91%,27%,0.7);
-	transition: transform 1s;
+	transition: transform .5s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -223,13 +222,12 @@ body{
 .plataformas{
     background: #9bd5e7;
     padding-bottom: 30px;
-	
 }
 
 .plata-cont{
     display:flex;
-    justify-content: space-evenly;
-	flex-direction: file;
+    justify-content: space-between;
+	align-items: center;
 }
 
 .plata-ind{
@@ -247,7 +245,7 @@ body{
 
 .plata-ind p{
     font-weight: 300;
-    text-align: center;
+    text-align: justify;
 }
 
 /* footer */
@@ -288,4 +286,105 @@ footer{
     font-size: 20px;
     margin: 10px 0 0 0;
     color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+	
+	nav{
+		text-align:center;
+		padding: 30px 0 0 0;
+	}
+	
+	nav > a{
+		margin-right: 5px;
+	}
+	
+	.textos-header h1{
+		font-size:30px;
+	}
+	
+	.textos-header h2{
+		font-size:20px;
+	}
+	
+	header{
+		background-position: center;
+	}
+	
+	.contenedor-sobre-pokemon{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.contenedor-sobre-pokemon .contenido-textos{
+		width: 90%;
+	}
+	
+	.img-about-poke{
+		width: 90%;
+	}
+	
+	.img-gen{
+		width: 44%;
+	}
+	
+	.cards{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.cards .card{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.cards .card:first-child{
+		margin-bottom: 30px;
+	}
+	
+	.plata-cont{
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	.plata-ind{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.plata-ind:nth-child(1), .plata-ind:nth-child(2){
+		margin-bottom: 50px;
+	}
+	
+	.plata-ind img{
+		width: 90%
+	}
+	
+	.contenedor-footer{
+		flex-direction: column;
+	}
+	
+	.content-foo{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	
+	.content-foo h4{
+		border: none;
+	}
+	
+	.content-foo p{
+		color: #ccc;
+		border-bottom: 1px solid #f2f2f2;
+		padding-bottom: 15px;
+	}
+	
+	.titulo-final{
+		font-size: 18px;
+	}
+	
 }
